@@ -126,7 +126,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 .area1-content {
-    padding: 60px 240px;
+    padding: 60px 100px;
 }
 .area1-quote {
     margin-bottom: 30px;
@@ -156,7 +156,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 .area2-content {
-    padding: 80px 240px;
+    padding: 80px 100px;
 }
 .area2-text {
     line-height: 25px;
@@ -182,7 +182,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
 }
 .area3-content {
-    padding: 200px 240px;
+    padding: 200px 100px;
     background-image: url(../../media/bg2.jpg);
     background-size: cover;
     background-position: left;
@@ -194,4 +194,117 @@ h2 {
     background-image: url(../../media/f5.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* AREA 4 */
+
+.area4 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    background-color: #E9EAEF;
+}
+.area4-content {
+    padding: 160px 0px 160px 100px;
+}
+.area4-text {
+    line-height: 25px;
+}
+.area4-img1 {
+    background-image: url(../../media/bg3.jpg);
+    background-position: left;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+/* AREA 5 */
+
+.area5 {
+    background-image: url(../../media/bg4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1140px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+@media (min-width: 649px) and (max-width: 820px) {
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media (max-width: 648px) {
+    .header-menu {
+        margin-left: 40px;
+    }
+    .header-search input {
+        width: 80%;
+    }
+    .banner {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner-images img {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        background: transparent;
+        margin-right: 10px;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content {
+        padding: 60px 40px;
+    }
+    .area1-text,
+    .area2-text,
+    .area3-text,
+    .area4-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .area5 {
+        height: 200px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    };
 }
